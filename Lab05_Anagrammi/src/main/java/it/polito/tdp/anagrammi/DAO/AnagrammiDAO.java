@@ -18,10 +18,17 @@ public class AnagrammiDAO {
 	    	 st.setString(1,parziale);
 	    	 ResultSet rs= st.executeQuery();
 	    	 if(rs.next()) {
+	    		 rs.close();
+	    		 st.close();
+	    		 conn.close();
 	    		 return true;
+	    		
 	    		 
 	    	 }
 	    	 else {
+	    		 rs.close();
+	    		 st.close();
+	    		 conn.close();
 	    		 return false;
 	    	 }
 	     }
