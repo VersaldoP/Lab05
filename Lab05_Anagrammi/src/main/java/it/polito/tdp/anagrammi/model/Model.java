@@ -37,6 +37,7 @@ public class Model {
 
 	private void generaAnagrammiRicorsivo(String parziale,String parola,int livello) {
 		// TODO Auto-generated method stub
+		//soluzioone alternativa mettere un int con il passo per vedere a che punto siamo della parola e vedere se il counter ha dimensione = parola di cui si cercano gli anagrammi
 		if(parola.length()==0) {
 			
 			anagrammi.add(parziale);
@@ -58,7 +59,7 @@ public class Model {
 	}
 
 	public Set<String> getAnagrammiCorretti() {
-		System.out.println("check");
+
 		return anagrammiCorretti;
 		
 	}
